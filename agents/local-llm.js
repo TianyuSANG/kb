@@ -1,5 +1,11 @@
 import { readConfig } from "../lib/config.js";
-import { ORCHESTRATOR_SYSTEM_PROMPT, COLLECTOR_SYSTEM_PROMPT } from "../lib/prompts.js";
+import {
+  ORCHESTRATOR_SYSTEM_PROMPT,
+  COLLECTOR_SYSTEM_PROMPT,
+  ANALYST_SYSTEM_PROMPT,
+  REVIEWER_SYSTEM_PROMPT,
+  WRITER_SYSTEM_PROMPT,
+} from "../lib/prompts.js";
 
 async function ollamaChat(system, userContent) {
   const cfg = readConfig();
@@ -54,6 +60,8 @@ export async function orchestrateLocal(userInput, dbEntries) {
       .trim();
     const parsed = JSON.parse(json);
     if (parsed.action === "collect") return { type: "collect", raw: parsed.raw ?? userInput };
+    if (parsed.action === "analyze") return { type: "analyze", query: parsed.query ?? userInput };
+    if (parsed.action === "write")   return { type: "write",   topic: parsed.topic ?? userInput };
     return { type: "answer", text: parsed.text ?? text };
   } catch {
     return { type: "answer", text };
@@ -79,6 +87,57 @@ export async function collectLocal(rawText) {
     raw: rawText,
     createdAt: new Date().toISOString(),
   };
+}
+
+export async function analyzeLocal(query, dbEntries) {
+  const words = query.toLowerCase().split(/\s+/).filter((w) => w.length > 1);
+  const relevant = dbEntries
+    .map((e) => {
+      const hay = [e.title, e.summary, e.category, ...e.tags].join(" ").toLowerCase();
+      return { entry: e, score: words.reduce((s, w) => s + (hay.includes(w) ? 1 : 0), 0) };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 15)
+    .filter((s) => s.score > 0)
+    .map((s) => s.entry);
+
+  const context = relevant.length > 0
+    ? `相关知识（${relevant.length} 条）：\n${JSON.stringify(relevant.map((e) => ({ title: e.title, summary: e.summary, tags: e.tags, raw: e.raw?.slice(0, 400) })), null, 2)}`
+    : "知识库中无相关内容。";
+
+  const text = await ollamaChat(ANALYST_SYSTEM_PROMPT, `${context}\n\n问题：${query}`);
+  return { text, sourceCount: relevant.length };
+}
+
+export async function reviewLocal(dbEntries) {
+  if (dbEntries.length === 0) return { duplicates: [], lowQuality: [], suggestions: ["知识库为空"] };
+  const compact = dbEntries.slice(0, 30).map((e) => ({
+    id: e.id, title: e.title, summary: e.summary, category: e.category,
+    tags: e.tags, tagCount: e.tags?.length ?? 0,
+  }));
+  const text = await ollamaChat(REVIEWER_SYSTEM_PROMPT, `请审查：\n${JSON.stringify(compact, null, 2)}`);
+  const json = text.replace(/^```json\s*/i, "").replace(/^```\s*/i, "").replace(/\s*```$/, "").trim();
+  try { return JSON.parse(json); } catch { return { duplicates: [], lowQuality: [], suggestions: [text] }; }
+}
+
+export async function writeLocal(topic, dbEntries) {
+  const words = topic.toLowerCase().split(/\s+/).filter((w) => w.length > 1);
+  const related = dbEntries
+    .map((e) => {
+      const hay = [e.title, e.summary, e.category, ...e.tags].join(" ").toLowerCase();
+      return { entry: e, score: words.reduce((s, w) => s + (hay.includes(w) ? 1 : 0), 0) };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 10)
+    .filter((s) => s.score > 0)
+    .map((s) => s.entry);
+
+  const context = related.length > 0
+    ? `素材（${related.length} 条）：\n${JSON.stringify(related.map((e) => ({ title: e.title, summary: e.summary, raw: e.raw?.slice(0, 600) })), null, 2)}`
+    : "无相关素材，请基于通用知识创作。";
+
+  const text = await ollamaChat(WRITER_SYSTEM_PROMPT, `${context}\n\n主题：${topic}`);
+  return { text, sourceCount: related.length };
 }
 
 export async function checkOllama() {

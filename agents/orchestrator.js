@@ -41,13 +41,11 @@ export async function orchestrate(userInput, dbEntries) {
       .trim();
     const parsed = JSON.parse(json);
 
-    if (parsed.action === "collect") {
-      return { type: "collect", raw: parsed.raw ?? userInput };
-    } else if (parsed.action === "answer") {
-      return { type: "answer", text: parsed.text ?? text };
-    } else {
-      return { type: "answer", text: parsed.text ?? text };
-    }
+    if (parsed.action === "collect") return { type: "collect", raw: parsed.raw ?? userInput };
+    if (parsed.action === "answer")  return { type: "answer",  text: parsed.text ?? text };
+    if (parsed.action === "analyze") return { type: "analyze", query: parsed.query ?? userInput };
+    if (parsed.action === "write")   return { type: "write",   topic: parsed.topic ?? userInput };
+    return { type: "answer", text: parsed.text ?? text };
   } catch {
     // Fallback: treat as direct answer
     return { type: "answer", text };
