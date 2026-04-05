@@ -420,7 +420,7 @@ async function handleInput(input) {
       rl.close();
       process.exit(0);
     case "list":    cmdList(); return;
-    case "open":    console.log(`\n  ${YELLOW}${VIEWER_PATH}${R}\n`); return;
+    case "open":    console.log(`\n  ${YELLOW}${VIEWER_PATH}${R}\n`); (await import("child_process")).exec(`start "" "${VIEWER_PATH}"`); return;
     case "clear":   console.clear(); banner(); return;
     case "add":      await manualAdd(rl); return;
     case "delete":   await cmdDelete(rest, rl); return;
