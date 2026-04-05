@@ -1,0 +1,105 @@
+{
+  "entries": [
+    {
+      "id": "1744000001-toeic01",
+      "title": "托业考试（TOEIC）概述",
+      "summary": "托业（TOEIC）是由美国教育考试服务中心（ETS）开发的国际商务英语能力测评，分为听说读写四项，总分990分（听读）或400分（说写）。",
+      "category": "托业考试",
+      "tags": [
+        "托业",
+        "toeic",
+        "英语考试",
+        "概述"
+      ],
+      "raw": "托业（TOEIC，Test of English for International Communication）是由美国教育考试服务中心（ETS）开发的国际商务英语能力测评体系。\n\n主要考试类型：\n1. TOEIC Listening & Reading（听力+阅读）：总分990分，两部分各495分\n2. TOEIC Speaking & Writing（口语+写作）：口语满分200分，写作满分200分，合并400分\n\n适用人群：职场人士、求职者、在校学生，尤其适合需要在国际职场环境中使用英语的人群。\n\n评分体系：听力和阅读各分5-495分，合计10-990分，以5分为单位递增。\n\n考试频率：全球每年举办多次，中国大陆每年约举办6-10次（各地时间不同）。",
+      "createdAt": "2026-04-05T00:00:01.000Z"
+    },
+    {
+      "id": "1744000002-toeic02",
+      "title": "托业听力部分（Part 1-4）详解",
+      "summary": "TOEIC听力共100题，分为Part 1图片描述、Part 2问答、Part 3对话、Part 4独白，考试时间约45分钟。",
+      "category": "托业考试",
+      "tags": [
+        "托业",
+        "toeic",
+        "听力",
+        "题型"
+      ],
+      "raw": "TOEIC 听力部分（Listening Section）共100题，约45分钟：\n\nPart 1 — 图片描述（Photographs）\n- 题数：6题\n- 形式：看图选出最符合的英文描述（A/B/C/D四选一）\n- 考点：名词、动词、介词短语、被动语态\n- 技巧：先看图预判场景；注意排除含错误人物/动作的选项\n\nPart 2 — 问答（Question-Response）\n- 题数：25题\n- 形式：听一句话或问句，选最合适的回应（A/B/C三选一）\n- 考点：特殊疑问词（Who/What/When/Where/Why/How）、一般疑问句、建议/请求句\n- 技巧：抓住句首疑问词；小心[间接回答]型正确选项\n\nPart 3 — 短对话（Conversations）\n- 题数：39题（13组对话，每组3题）\n- 形式：听两到三人对话，答对话相关问题（有图表题）\n- 考点：场景理解、说话人意图、图表与对话结合\n- 技巧：提前阅读题目和选项；注意[图表题]需结合听到的信息\n\nPart 4 — 短独白（Talks）\n- 题数：30题（10段独白，每段3题）\n- 形式：听广播、通知、留言等，答相关问题\n- 考点：主题、细节、说话人目的、图表题\n- 技巧：预读题目预判内容；注意独白开头结尾的关键信息",
+      "createdAt": "2026-04-05T00:00:02.000Z"
+    },
+    {
+      "id": "1744000003-toeic03",
+      "title": "托业阅读部分（Part 5-7）详解",
+      "summary": "TOEIC阅读共100题，分为Part 5单句填空、Part 6短文填空、Part 7阅读理解，考试时间75分钟，需合理分配。",
+      "category": "托业考试",
+      "tags": [
+        "托业",
+        "toeic",
+        "阅读",
+        "题型"
+      ],
+      "raw": "TOEIC 阅读部分（Reading Section）共100题，75分钟（自行掌控时间）：\n\nPart 5 — 单句填空（Incomplete Sentences）\n- 题数：30题\n- 形式：句子中有一个空格，四选一填入最合适的词\n- 考点：词性辨析、动词时态/语态、介词、连词、代词\n- 技巧：先看空格前后语境；区分词性（名词/动词/形容词/副词）；每题目标20-25秒\n\nPart 6 — 短文填空（Text Completion）\n- 题数：16题（4篇短文，每篇4空）\n- 形式：邮件/通知/广告中填入词语或句子\n- 考点：语法+逻辑连贯；有[整句填空]题型需理解上下文\n- 技巧：先通读全文再填空；整句题必须结合上下文语境\n\nPart 7 — 阅读理解（Reading Comprehension）\n- 题数：54题\n  - 单篇文章（Single Passages）：29题\n  - 双篇文章（Double Passages）：10题\n  - 三篇文章（Triple Passages）：15题\n- 文章类型：邮件、广告、通知、报告、表格、聊天记录等\n- 考点：主旨、细节、推断、词义、作者意图、交叉信息\n- 技巧：先看题目再定位文章；双/三篇题注意信息在不同文章间的关联；时间紧张时优先做单篇\n\n时间分配建议：Part 5约15分钟，Part 6约10分钟，Part 7约50分钟",
+      "createdAt": "2026-04-05T00:00:03.000Z"
+    },
+    {
+      "id": "1744000004-toeic04",
+      "title": "托业分数对应及各行业参考标准",
+      "summary": "TOEIC 990分满分，800+分被认为具备流利商务英语能力；日企普遍要求600-730+，外资企业通常要求800+。",
+      "category": "托业考试",
+      "tags": [
+        "托业",
+        "toeic",
+        "分数",
+        "标准",
+        "求职"
+      ],
+      "raw": "TOEIC 听读分数参考对照：\n\n分数段 → 能力描述：\n- 905-990分：能够流利地在国际职场沟通，接近母语水平\n- 785-900分：能够较流利地进行商务英语沟通，表达准确\n- 605-780分：能够应付日常职场英语，偶有误解\n- 405-600分：具备基础沟通能力，较复杂内容有困难\n- 10-400分：基础阶段，日常简单交流有限\n\n各场景参考要求：\n- 日资企业（一般职位）：600分以上\n- 日资企业（晋升/海外派遣）：730-800分以上\n- 外资企业（普通职位）：700-750分以上\n- 外资企业（高级职位/管理层）：850分以上\n- 中国高校英语专业：参考值550-650分\n- 留学申请（非英语国家高校辅助材料）：700分以上\n\nCEFR 对应（参考）：\n- C1（高阶）：约860-990\n- B2（中高阶）：约730-855\n- B1（中阶）：约550-725\n- A2（基础）：约225-545",
+      "createdAt": "2026-04-05T00:00:04.000Z"
+    },
+    {
+      "id": "1744000005-toeic05",
+      "title": "托业高频词汇分类",
+      "summary": "托业核心词汇约3000-4000词，主要围绕商务、办公、人事、财务、旅行、餐饮、医疗、广告等场景展开。",
+      "category": "托业考试",
+      "tags": [
+        "托业",
+        "toeic",
+        "词汇",
+        "备考"
+      ],
+      "raw": "TOEIC 高频词汇分类（按场景）：\n\n【办公/行政】\nappoint 任命 | agenda 议程 | authorize 授权 | bulletin board 公告栏 | correspondence 往来信件 | deadline 截止日期 | delegate 委派 | facilitate 促进 | headquarters 总部 | invoice 发票 | notify 通知 | personnel 人员 | premises 场所 | priority 优先级 | procedure 程序 | schedule 安排 | submit 提交\n\n【商务/销售】\naccount 账户/客户 | acquire 获取 | brochure 宣传册 | campaign 活动 | client 客户 | contract 合同 | discount 折扣 | distribute 分发 | expand 扩张 | launch 发布 | negotiate 谈判 | profit 利润 | promote 推广 | proposal 提案 | revenue 收入 | vendor 供应商\n\n【财务/会计】\naccountant 会计师 | asset 资产 | audit 审计 | balance 余额 | budget 预算 | expense 费用 | fiscal 财政的 | fund 资金 | invest 投资 | liability 负债 | overhead 间接费用 | payroll 工资单 | reimbursement 报销 | transaction 交易\n\n【人事/招聘】\napplicant 申请人 | benefit 福利 | candidate 候选人 | certificate 证书 | evaluate 评估 | hire 雇用 | interview 面试 | position 职位 | promote 晋升 | qualification 资格 | resign 辞职 | retire 退休 | supervisor 上司 | vacancy 空缺\n\n【旅行/出差】\nitinerary 行程 | accommodate 住宿 | board 登机/登船 | cancel 取消 | confirm 确认 | customs 海关 | departure 出发 | destination 目的地 | duration 持续时间 | reserve 预订 | terminal 航站楼\n\n【医疗/健康】\nappoint 预约 | clinic 诊所 | diagnose 诊断 | emergency 紧急情况 | prescription 处方 | symptom 症状 | treatment 治疗",
+      "createdAt": "2026-04-05T00:00:05.000Z"
+    },
+    {
+      "id": "1744000006-toeic06",
+      "title": "托业备考策略与学习计划",
+      "summary": "根据目标分数和备考时长制定学习计划：650分3个月、730分4-6个月、850+分6-12个月，需针对性强化薄弱项。",
+      "category": "托业考试",
+      "tags": [
+        "托业",
+        "toeic",
+        "备考",
+        "学习计划",
+        "策略"
+      ],
+      "raw": "TOEIC 备考策略：\n\n一、评估现有水平\n- 做一套完整模拟题（听力+阅读）了解当前分数段\n- 分析错题分布：哪个Part失分最多？语法/词汇/听力哪块最弱？\n\n二、目标分数与建议备考时长\n- 目标600分（基础起步）：约2-3个月，每天1小时\n- 目标730分：约3-4个月，每天1.5小时\n- 目标860分：约4-6个月，每天2小时\n- 目标900+（需强化全部技能）：6个月以上\n\n三、各部分备考重点\n听力：\n- 每日精听：跟读Part 3/4对话，模仿语音语调\n- 扩大词汇量：商务场景词汇优先\n- 练习边听边记关键词的能力\n\n阅读：\n- Part 5：专项语法练习（词性、时态、介词），每天20题\n- Part 6：练习整句填空，理解上下文衔接\n- Part 7：提速训练，练习快速定位答案，目标每题1分钟内\n\n四、推荐资源\n- 官方资料：ETS《TOEIC官方题库》《TOEIC模拟全真题》\n- 练习App：托业助手、English Central、Duolingo（辅助）\n- 词汇书：《TOEIC必备词汇》《新东方TOEIC词汇》\n\n五、考试当天技巧\n- 听力：提前看题目（Part 3/4需在播音间隙快速预读）\n- 阅读：严格控制各Part时间，Part 7留足时间\n- 答题卡必须全部填写，不答直接0分",
+      "createdAt": "2026-04-05T00:00:06.000Z"
+    },
+    {
+      "id": "1744000007-toeic07",
+      "title": "托业常见语法考点（Part 5重点）",
+      "summary": "Part 5语法题核心考点：词性辨析、动词时态语态、介词、连词、代词、比较级；掌握这些可稳拿80%以上正确率。",
+      "category": "托业考试",
+      "tags": [
+        "托业",
+        "toeic",
+        "语法",
+        "part5",
+        "备考"
+      ],
+      "raw": "TOEIC Part 5 核心语法考点：\n\n1. 词性辨析（最高频）\n- 同根词四选一：manage(v) / manager(n) / management(n) / managerial(adj)\n- 方法：看空格在句中的语法位置：主语/宾语=名词，修饰名词=形容词，修饰动词=副词\n\n2. 动词时态与语态\n- 现在完成时：already/yet/since/for + 完成时\n- 被动语态：主语是动作的承受者 → be + pp\n- 常考：The report has been submitted. / The meeting was held yesterday.\n\n3. 介词搭配\n- 高频介词：in, on, at, for, by, with, during, within, throughout\n- 常见错误：on time（准时）vs in time（及时）；by Friday（截止周五）vs until Friday（持续到周五）\n\n4. 连词与连接副词\n- 并列连词：and/but/or/so\n- 从属连词：because/although/while/if/unless/as long as\n- 连接副词（后接完整句）：however/therefore/moreover/nevertheless\n- 注意：连接副词不能直接连接两个句子，需加分号或句号\n\n5. 代词\n- 主格/宾格/所有格/反身代词的区分\n- 常错：Every employee should submit his or her report\n\n6. 比较级与最高级\n- 两者比较用比较级，三者及以上用最高级\n- 常见句式：A is twice as + adj + as B；the + 最高级 + in/of\n\n7. 关系代词/关系副词\n- who（人，主/宾格）/ which（物）/ that（人或物）/ whose（所有格）\n- where（地点从句）/ when（时间从句）/ why（原因从句）",
+      "createdAt": "2026-04-05T00:00:07.000Z"
+    }
+  ]
+}
